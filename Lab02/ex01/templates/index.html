@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bảo Mật Thông Tin Nâng Cao</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .header {
+            background: #fff;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 24px 0 16px 0;
+            text-align: center;
+        }
+        .header img {
+            width: 160px;
+            margin-bottom: 12px;
+        }
+        .header h4 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #222;
+            margin: 0;
+        }
+        .cipher-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            max-width: 860px;
+            margin: 36px auto;
+            padding: 0 20px;
+        }
+        .cipher-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 28px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: #222;
+            border: 1px solid #e0e0e0;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+        .cipher-card:hover {
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            transform: translateY(-3px);
+            text-decoration: none;
+            color: #222;
+        }
+        .cipher-card h5 {
+            font-weight: 600;
+            font-size: 15px;
+            margin: 0 0 6px 0;
+        }
+        .cipher-card p {
+            font-size: 12px;
+            color: #888;
+            margin: 0;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-bottom: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://file1.hotech.edu.vn/file/editor/homepage/stories/hình34/logo%20CMYK-01.png" alt="hutech"/>
+        <h4>BÀI THỰC HÀNH BẢO MẬT THÔNG TIN NÂNG CAO</h4>
+    </div>
+
+    <div class="cipher-grid">
+        <a href="/caesar" class="cipher-card">
+            <div class="dot" style="background:#e74c3c;"></div>
+            <h5>Caesar Cipher</h5>
+            <p>Substitution cipher</p>
+        </a>
+        <a href="/vigenere" class="cipher-card">
+            <div class="dot" style="background:#3498db;"></div>
+            <h5>Vigenere Cipher</h5>
+            <p>Polyalphabetic cipher</p>
+        </a>
+        <a href="/railfence" class="cipher-card">
+            <div class="dot" style="background:#9b59b6;"></div>
+            <h5>Rail Fence Cipher</h5>
+            <p>Transposition cipher</p>
+        </a>
+        <a href="/playfair" class="cipher-card">
+            <div class="dot" style="background:#e67e22;"></div>
+            <h5>Playfair Cipher</h5>
+            <p>Digraph substitution</p>
+        </a>
+        <a href="/transposition" class="cipher-card">
+            <div class="dot" style="background:#1abc9c;"></div>
+            <h5>Transposition Cipher</h5>
+            <p>Columnar transposition</p>
+        </a>
+        <a href="/rsa" class="cipher-card">
+            <div class="dot" style="background:#f39c12;"></div>
+            <h5>RSA Cipher</h5>
+            <p>Asymmetric encryption</p>
+        </a>
+    </div>
+</body>
+</html>
